@@ -67,7 +67,10 @@ ul{
 .feedback,
 .questions,
 .contact,
-footer
+.page-footer,
+.color-section,
+.features-section,
+.team-section
 {
   padding: 0 1rem;
   padding-block: min(2rem,3rem);
@@ -258,6 +261,8 @@ footer
 
 
 /* ======== Process Section ========= */
+
+
 
 .process-left {
   display: flex;
@@ -934,6 +939,302 @@ img{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============== About Page ============= */
+ .about-process-left{
+  order: 1;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-process-right{
+  order: 2;
+}
+
+.about-process-header{
+  font-size: clamp(1.1rem,1rem,1.6rem);
+  margin-bottom: .5rem;
+}
+
+.about-process-left p{
+  margin-bottom: .5rem;
+}
+
+
+
+
+
+
+/* Color-section */
+
+.color-section .container{
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 1.3rem;
+}
+
+.color-section .color-box{
+  padding: 1.5rem 2rem;
+  display: flex;
+  gap: 20px;
+  flex-direction:column;
+  color: #fff;
+}
+
+.color-section .color-box-header,
+.color-section .color-box-description{
+  z-index: 1;
+  text-align: center;
+}
+
+.color-section .color-box-header{
+  font-size: clamp(2rem,1.5rem,1.6rem);
+  font-weight: bolder;
+}
+
+.color-section .color-box-description{
+  font-size:clamp(1.3rem,1.1rem,1.2rem);
+}
+
+.color-section .color-box:nth-of-type(1){
+  background:url(../images/Image-2.png);
+  position: relative;
+  background-size: cover;
+}
+
+.color-section .color-box:nth-of-type(1)::before{
+  background-color: #F85B29E5;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 90%;
+  width: 100%;
+}
+
+
+
+.color-section .color-box:nth-of-type(2){
+  background:
+  url(../images/Image\ \(2\).png) center top;
+  position: relative;
+  background-size: cover;
+}
+
+.color-section .color-box:nth-of-type(2)::before{
+  background-color:#000;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 90%;
+  width: 100%;
+}
+
+.color-section .color-box:nth-of-type(3){
+  background:url(../images/Image\ \(2\).png) center top;
+  position: relative;
+  background-size: cover;
+}
+
+.color-section .color-box:nth-of-type(3)::before{
+  background-color:#7443ca;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 90%;
+  width: 100%;
+}
+
+
+/* Color-section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========Features-section=========*/
+.features-section{
+  background-color: #f8f8f8;
+}
+
+.features-section .container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.features-section .features-section-header{
+  color: #1e1b1b;
+  font-size: clamp(1rem,1.3rem,1.1rem);
+  align-self: center;
+}
+
+
+.features-section .feature-boxes{
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 1px;
+}
+
+.features-section .feature-box{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  padding: 1.5rem;
+  position: relative;
+  gap: 1.1rem;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.features-section .feature-box-header{
+  font-size: clamp(1rem,1.3rem,1.1rem);
+  font-weight: bolder;
+  color: #1e1b1b;
+  align-self: center;
+  display: flex;
+  flex-direction:column;
+}
+
+.features-section .feature-box-header::before{
+  content:'';
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ffdace;
+  align-self: center;
+}
+
+.feature-box:nth-of-type(1) .feature-box-header::before{
+  content: url(../images/image\ 3.png);
+}
+
+ .feature-box:nth-of-type(2) .feature-box-header::before{
+  content:url(../images/image\ 4.png);
+}
+
+.feature-box:nth-of-type(3) .feature-box-header::before{
+  content:url(../images/image\ 5.png);
+}
+
+
+.features-section .feature-box-description{
+  font-size: clamp(1rem,1.1rem,1.2rem);
+  color: #232536;
+  opacity: 60%;
+  text-align: center;
+}
+
+.features-section .experience{
+  background: none;
+}
+
+
+.features-section .experience .container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* Team Section */
+.team-section .container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-section-header{
+  align-self: center;
+  font-size: clamp(1.3rem,1.1rem,1.5rem);
+}
+
+
+.team-section .team-members{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.team-section .team-member-box .img-box{
+  position: relative;
+}
+
+.team-section .bio{
+  background-color: #161616;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.team-section .bio h6{
+  font-weight: 500;
+}
+
+/* About Page Styling Ends Here */
+
+
+
+
+
+
+
+
+
+
+
 .contact,.page-footer{
   background-color: #1e1b1b;
 }
@@ -1444,6 +1745,42 @@ img{
 
 
 
+
+
+
+
+
+
+
+
+  /* About Page  */
+
+  .color-section .container,
+  .features-section .feature-boxes{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+
+  .features-section .feature-box{
+    border-left:2px solid #f2f2f2;
+  }
+
+  .features-section .experience .container{
+    flex-direction: row;
+  }
+
+
+
+
+
+
+
+  /* Team Section */
+
+  .team-section .team-members{
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(200px,1fr);
+  }
 
 
 
